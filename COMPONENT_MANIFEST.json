@@ -1,0 +1,60 @@
+{
+  "components": [
+    {
+      "path": "references/components/lira-image-prompts/SKILL.md",
+      "bytes": 30368,
+      "sha256": "F480D1AD5B61F7B33DF3BC49E1B652E50A9A75ACEF280C8893FACD6CB40EEE83"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/agents/openai.yaml",
+      "bytes": 306,
+      "sha256": "A3C0CF918FD9E275F4F71C4BE876B565DE18CE92F0C6E748048D3F3D760FEB99"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/examples/integrated-dialogue-shot.md",
+      "bytes": 4143,
+      "sha256": "6CC5453127B66C0D7290ED5BF2F97832ED2BF1B8553CC2A0419EABFBEAD68BF8"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/README.md",
+      "bytes": 922,
+      "sha256": "306ED0BE82E3DB47558E31160F154023046F97F267FED7534D256E3661F27B6C"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/references/acting-performance-system.md",
+      "bytes": 12831,
+      "sha256": "7273D1234E3129E3F801E1A81F1BB4F15E0F70BA4E0A897A31431CC8B05E2FDA"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/references/cinedance-directing-system.md",
+      "bytes": 12960,
+      "sha256": "097FA0E35A32C6CE8D0F815833DC2E3B045B60EF288F15B4A38EE95987911EC7"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/references/integration-rules.md",
+      "bytes": 6121,
+      "sha256": "BFE5620DC353FE05B48E31AEEC5A93C25130CCE494B3CCCB6DAE97563896E654"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/scripts/validate-skill.ps1",
+      "bytes": 4652,
+      "sha256": "9FF234B2E6A2C28842BFB166F0EA7ED905EBFC83327EE599B4FDB27AA54FF265"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/SKILL.md",
+      "bytes": 7611,
+      "sha256": "0A02C572555FA10D56796FBEBBFADE280E71588F2FF7573A6B643428E8F6816B"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/SOURCE_NOTES.md",
+      "bytes": 1455,
+      "sha256": "331D78FB5C765E7141E5FBB36BF44DF2E635DDCE6C6B8957F990796A07B3FC81"
+    },
+    {
+      "path": "references/components/xiaotian-cinedance/templates/final-seedance-prompt-template.md",
+      "bytes": 3074,
+      "sha256": "066EF296311872230FBFB925E2142B02CAE2DFF36D7866C7C0ED9118425FF9A8"
+    }
+  ]
+}
+

@@ -1,0 +1,18 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local test/build output
+.pytest_cache/
+dist/
+build/
+*.log
+

@@ -1,0 +1,4 @@
+interface:
+  display_name: "xiaotian-CINEDANCE"
+  short_description: "把角色表演与镜头调度融合为中文 Seedance 2.0 提示词"
+  default_prompt: "使用 $xiaotian-cinedance，把我的场景写成包含真实角色表演、空间走位和导演镜头调度的中文 Seedance 2.0 提示词。"
