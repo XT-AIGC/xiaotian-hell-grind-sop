@@ -1,5 +1,5 @@
 interface:
   display_name: "xiaotian-Hell Grind-sop"
-  short_description: "总控LIRA视觉资产与xiaotian-CINEDANCE视频镜头"
-  default_prompt: "使用 $xiaotian-hell-grind-sop，把我的AI影视需求按视觉资产、引用交接和中文Seedance 2.0视频提示词推进到当前可交付阶段。"
+  short_description: "总控LIRA视觉资产与Seedance 2.0/2.5视频镜头"
+  default_prompt: "使用 $xiaotian-hell-grind-sop，把我的AI影视需求按视觉资产、引用交接和中文Seedance视频提示词推进到当前可交付阶段；未指定版本默认 2.0，明确指定 2.5 时按 2.5 适配。"
 

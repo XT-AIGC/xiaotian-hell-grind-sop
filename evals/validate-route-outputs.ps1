@@ -28,7 +28,7 @@ Require-Text $eval4 @('尚未上传', '真实标签', '不会把内部资产ID')
 if ((Get-Content -LiteralPath $eval1 -Raw -Encoding UTF8) -match '@Image[0-9]+') {
     $failures.Add('完整路线资产阶段不应出现平台@Image标签')
 }
-if ((Get-Content -LiteralPath $eval3 -Raw -Encoding UTF8) -match 'Seedance 2\.0 成品提示词|【角色表演') {
+if ((Get-Content -LiteralPath $eval3 -Raw -Encoding UTF8) -match 'Seedance 2\.(?:0|5) 成品提示词|【角色表演') {
     $failures.Add('图片编辑路线错误加载了视频表演输出')
 }
 
