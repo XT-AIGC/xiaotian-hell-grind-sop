@@ -14,6 +14,8 @@ $required = @(
     'SKILL.md',
     'agents/openai.yaml',
     'references/routing-and-handoff.md',
+    'references/seedance-version-compatibility.md',
+    'examples/seedance-version-examples.md',
     'references/components/lira-image-prompts/SKILL.md',
     'references/components/xiaotian-cinedance/SKILL.md',
     'templates/asset-handoff-template.md',
@@ -39,7 +41,7 @@ if (Test-Path -LiteralPath $skillPath) {
     Assert-Condition ($skill -match '视频直达路线') '缺少视频直达路线'
     Assert-Condition ($skill -match '完整制作路线') '缺少完整制作路线'
     Assert-Condition ($skill -match '图片模型核心提示词使用英文') '缺少图片提示词英文默认规则'
-    Assert-Condition ($skill -match '简体中文 Seedance 2\.0') '缺少视频提示词中文默认规则'
+    Assert-Condition ($skill -match '简体中文 Seedance' -and $skill -match '未指定版本默认 2\.0' -and $skill -match 'Seedance 2\.5') '缺少视频提示词中文与版本默认规则'
     Assert-Condition ($skill -match '不替用户编号') '缺少禁止虚构上传标签规则'
     Assert-Condition ($lines -le 500) "SKILL.md共$lines行，超过500行"
 }
@@ -48,7 +50,7 @@ $yamlPath = Join-Path $SkillRoot 'agents/openai.yaml'
 if (Test-Path -LiteralPath $yamlPath) {
     $yaml = Get-Content -LiteralPath $yamlPath -Raw -Encoding UTF8
     Assert-Condition ($yaml -match 'display_name:\s*"xiaotian-Hell Grind-sop"') '用户可见名称不正确'
-    Assert-Condition ($yaml -match '\$xiaotian-hell-grind-sop') '默认调用名不正确'
+    Assert-Condition ($yaml -match '\$xiaotian-hell-grind-sop' -and $yaml -match '未指定版本默认 2\.0' -and $yaml -match '2\.5') '默认调用名不正确'
 }
 
 $manifestPath = Join-Path $SkillRoot 'COMPONENT_MANIFEST.json'
@@ -78,7 +80,7 @@ if (Test-Path -LiteralPath $evalPath) {
     try {
         $evals = Get-Content -LiteralPath $evalPath -Raw -Encoding UTF8 | ConvertFrom-Json
         Assert-Condition ($evals.skill_name -eq 'xiaotian-hell-grind-sop') 'evals skill_name不正确'
-        Assert-Condition (@($evals.evals).Count -ge 4) '至少需要4个路由与交接测试'
+        Assert-Condition (@($evals.evals).Count -ge 13) '至少需要13个路由、交接与版本测试'
     }
     catch {
         $failures.Add("evals.json无法解析：$($_.Exception.Message)")

@@ -4,12 +4,12 @@
 
 ### 从视觉资产到 Seedance 镜头的 AI 影视一体化总控
 
-把人物、场景、道具和关键帧的设计，与角色表演、空间走位、导演调度和中文 Seedance 2.0 视频提示词连接成一条可靠工作流。
+把人物、场景、道具和关键帧的设计，与角色表演、空间走位、导演调度和中文 Seedance 2.0 / 2.5 视频提示词连接成一条可靠工作流。
 
 [功能说明](#它解决什么问题) · [三条制作路线](#三条制作路线) · [安装方式](#安装方式) · [下载 ZIP](https://github.com/XT-AIGC/xiaotian-hell-grind-sop/archive/refs/heads/main.zip) · [快速上手](#快速上手)
 
 ![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827?style=flat-square)
-![Seedance 2.0](https://img.shields.io/badge/Seedance-2.0-7C3AED?style=flat-square)
+![Seedance 2.0 / 2.5](https://img.shields.io/badge/Seedance-2.0%20%2F%202.5-7C3AED?style=flat-square)
 ![Language](https://img.shields.io/badge/输出语言-简体中文-16A34A?style=flat-square)
 
 </div>
@@ -29,16 +29,38 @@ AI 影视制作最常见的断点，往往不在单张图片或单条视频提�
 `xiaotian-Hell Grind-sop` 用一套总控路由连接两个内嵌组件：
 
 - **LIRA**：负责人物、场景、产品、道具、关键帧与图片编辑提示词。
-- **xiaotian-CINEDANCE**：负责人物表演、空间走位、导演调度与中文 Seedance 2.0 视频提示词。
+- **xiaotian-CINEDANCE**：保留原始 2.0 组件，提供人物表演、空间走位与导演调度；总控按目标版本编译中文视频提示词。
 
 总控只加载当前阶段真正需要的组件，不把尚未存在的素材假装成可用引用。
+
+## Seedance 版本兼容
+
+未指定版本默认 **Seedance 2.0**，不自动升级。明确指定 **Seedance 2.5** 时使用总控版本适配层；三条制作路线与资产交接关不变。
+
+| 项目 | 2.0 保留路径 | 2.5 适配路径 |
+|---|---|---|
+| 时长 | 按平台设置，单次不超过 15 秒；长任务拆段 | 单次最长 30 秒，可按平台开放的续接入口延长；不强制用满时长 |
+| 参考 | 已支持文字、图片、音频、视频；容量按实际入口确认 | 参考控制增强，仍逐项绑定职责与真实标签；容量按实际入口确认 |
+| 编辑 | 使用平台已开放功能，不承诺 2.5 增强能力 | 可规划时间戳定点编辑、白模参考、绿幕与机位编辑，先核对入口支持 |
+| 表演与空间 | 原有规则继续使用 | 共用可见表演、轴线、走位、道具状态与声音连续性规则 |
+
+官方依据、能力与平台边界、组件冲突处理详见 [Seedance 版本兼容审计](references/seedance-version-compatibility.md)。内嵌组件、其中的 2.0 示例和哈希不变；其版本名称不覆盖总控已选择的 2.5。Soul 2.0 等图片模型名也保持原样。
+
+2.5 使用示例：
+
+```text
+使用 $xiaotian-hell-grind-sop，目标 Seedance 2.5，写一条30秒中文视频提示词。
+我已确认平台支持30秒生成；已有角色和场景素材，按我提供的真实标签使用。
+```
+
+更多 [2.0 保留与 2.5 生成、编辑、续接示例](examples/seedance-version-examples.md)。
 
 ## 三条制作路线
 
 | 路线 | 什么时候用 | 你会得到什么 |
 |---|---|---|
 | **视觉资产** | 需要定妆、场景、道具、产品图、关键帧或图片修改 | 英文图片核心提示词、中文参数、资产职责与使用说明 |
-| **视频直达** | 已有足够参考素材，或当前镜头不需要先生成图片 | 人物表演、走位、摄影、灯光、声音完整协同的中文 Seedance 2.0 提示词 |
+| **视频直达** | 已有足够参考素材，或当前镜头不需要先生成图片 | 人物表演、走位、摄影、灯光、声音完整协同的中文 Seedance 2.0 / 2.5 提示词（未指定版本默认 2.0） |
 | **完整制作** | 人物、空间或关键道具尚未锁定，需要先做资产再做视频 | 资产设计 → 实际生成与验收 → 引用交接 → 视频提示词的分阶段成果 |
 
 ### 完整制作的关键原则
@@ -54,14 +76,14 @@ AI 影视制作最常见的断点，往往不在单张图片或单条视频提�
    ↓
 镜头编译（xiaotian-CINEDANCE）
    ↓
-中文 Seedance 2.0 成品提示词
+中文 Seedance 成品提示词（默认 2.0，显式选择可用 2.5）
 ```
 
 只有真正生成、验收并上传的素材，才会进入视频引用。计划中的素材始终保持“待生成 / 待验收 / 待绑定”。
 
 ## 适合谁用
 
-- 用 Seedance 2.0 制作 AI 短片、短剧、广告、概念片或作品集的人。
+- 用 Seedance 2.0 或 2.5 制作 AI 短片、短剧、广告、概念片或作品集的人。
 - 需要同时控制角色身份、空间关系、道具职责和镜头连续性的创作者。
 - 已经有图片素材，但不知道哪些应该作为视频参考的人。
 - 想减少假引用、重复生图、角色漂移和镜头信息互相打架的人。
@@ -187,6 +209,7 @@ xiaotian-hell-grind-sop/
 ├── agents/openai.yaml                    # Codex 界面名称与默认提示
 ├── references/
 │   ├── routing-and-handoff.md            # 路由与引用交接规则
+│   ├── seedance-version-compatibility.md  # 官方依据与版本适配
 │   └── components/
 │       ├── lira-image-prompts/           # 视觉资产组件
 │       └── xiaotian-cinedance/           # 表演与导演镜头组件
@@ -211,6 +234,14 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\validate-sop.
 ```text
 [PASS] xiaotian-Hell Grind-sop结构、路由、语言与组件完整性验证通过。
 ```
+
+跨平台静态验证（Python 3 + PyYAML）：
+
+```bash
+python scripts/validate-sop.py
+```
+
+它检查版本默认值、元数据、示例/eval 合同、引用链接与全部组件哈希；不代表已运行图片或视频模型。`evals/iteration-1/` 是原始 2.0 历史记录，不改写为 2.5 成绩。
 
 ## 更新
 
