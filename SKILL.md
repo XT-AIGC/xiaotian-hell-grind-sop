@@ -9,9 +9,11 @@ description: >-
 这是视觉资产与视频镜头的一体化总控。它不把两套专家规则同时塞进上下文，而是先判断当前生产阶段，再按需加载：
 
 - `references/components/lira-image-prompts/SKILL.md`：人物、场景、道具、关键帧和图片编辑提示词。
-- `references/components/xiaotian-cinedance/SKILL.md`：角色表演、空间走位、导演调度和中文 Seedance 2.0 视频提示词。
+- `film-sop-core/higgsfield-seedance-prompt-builder.md`：用户最新指定的 v4.4.2 视频核心。
+- `film-sop-core/AGENTS.md`：四项辅助 Skill 的按需路由。
+- `references/components/xiaotian-cinedance/`：旧版补充参考，不默认完整加载。
 
-任何任务开始前先读 `references/routing-and-handoff.md`。完整路线需要交付字段时再读 `templates/asset-handoff-template.md`。
+任何任务开始前先读 `references/instruction-precedence.md` 和 `references/routing-and-handoff.md`。完整路线需要交付字段时再读 `templates/asset-handoff-template.md`。
 
 ## 核心原则
 
@@ -24,8 +26,8 @@ description: >-
 | 路线 | 触发条件 | 加载组件 | 当前交付 |
 |---|---|---|---|
 | 视觉资产 | 人物定妆、场景图、道具、关键帧、图片修改或图片提示词 | LIRA | 图片提示词、参数和简短使用说明 |
-| 视频直达 | 已有足够参考，或当前镜头不需要先生成图片 | xiaotian-CINEDANCE | 中文 Seedance 2.0 成品提示词 |
-| 完整制作 | 用户明确要先做资产再做视频，或关键身份/场景/道具尚未锁定 | LIRA → 交接关 → xiaotian-CINEDANCE | 先资产包；上传确认后再视频提示词 |
+| 视频直达 | 已有足够参考，或当前镜头不需要先生成图片 | v4.4.2 核心 + 按需辅助 Skill | 中文 Seedance 2.0 成品提示词 |
+| 完整制作 | 用户明确要先做资产再做视频，或关键身份/场景/道具尚未锁定 | LIRA → 交接关 → v4.4.2 核心 | 先资产包；上传确认后再视频提示词 |
 
 若一句话同时出现“人物图、场景图、视频提示词”，默认选择完整制作路线，但严格分阶段交付，不把尚未生成的资产当成引用。
 
@@ -45,7 +47,9 @@ description: >-
 
 ## 视频直达路线
 
-读取 `xiaotian-CINEDANCE` 完整组件。只把当前真实存在的参考及其准确标签交给它。
+先读取 `film-sop-core/AGENTS.md` 和 `film-sop-core/higgsfield-seedance-prompt-builder.md`，再按需读取新包辅助 Skill。只使用当前真实存在且已绑定的参考。旧 CINEDANCE 仅补充新包未覆盖的知识，重复或冲突规则不执行。
+
+按 `references/instruction-precedence.md` 处理语言、模型版本和独立分段：默认中文，每段独立完整；更新指令包不自动升级视频模型。
 
 默认直接输出简体中文 Seedance 2.0 成品提示词，包含任务所需的：
 
@@ -95,7 +99,7 @@ LOC-01  → 用户确认上传后实际得到 @Image2
 
 ### 阶段4：视频编译
 
-只有交接关通过后才读取 `xiaotian-CINEDANCE`，将已确认引用、人物表演、导演调度、时间、物理、灯光和声音编译为中文 Seedance 2.0 提示词。
+只有交接关通过后才按新包路由读取 v4.4.2 核心与所需辅助 Skill，将已确认引用、人物表演、导演调度、时间、物理、灯光和声音编译为中文 Seedance 2.0 提示词。
 
 ## 输出契约
 
@@ -109,7 +113,7 @@ LOC-01  → 用户确认上传后实际得到 @Image2
 
 ## 冲突顺序
 
-当两组件规则竞争时，按以下顺序决定：
+新旧指令的选择先服从 `references/instruction-precedence.md`：新版核心优先，旧版重复或冲突规则不执行。具体创作约束按以下顺序决定：
 
 1. 用户明确要求、权利、安全和真实素材状态。
 2. 已验收资产、准确标签及其唯一参考职责。
@@ -118,12 +122,14 @@ LOC-01  → 用户确认上传后实际得到 @Image2
 5. 摄影、物理、声音和风格。
 6. 模板与默认语言。
 
-LIRA负责图片资产真值；`xiaotian-CINEDANCE`负责视频镜头真值。后者不得悄悄重塑已经验收的人物、场景或道具，前者也不得替视频阶段决定表演节拍和镜头时间轴。
+LIRA负责图片资产真值；v4.4.2 核心负责视频镜头编译。后者不得悄悄重塑已经验收的人物、场景或道具，前者也不得替视频阶段决定表演节拍和镜头时间轴。
 
 ## 静默检查
 
 输出前确认：
 
+- 是否使用 v4.4.2 核心，且未让旧版重复或冲突规则覆盖新版
+- 每个独立生成段是否完整自足，不依赖前段文字或未绑定素材
 - 是否选择了最短足够路线
 - 是否只加载本阶段需要的组件
 - 图片提示词是否默认英文、视频提示词是否默认中文
