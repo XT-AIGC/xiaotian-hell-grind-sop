@@ -1,0 +1,1 @@
+本包包含四项辅助 Skill 与 AGENTS.md 项目路由文件。将 skills 目录与 AGENTS.md 放入 Codex 项目根目录，并保证核心文件 higgsfield-seedance-prompt-builder.md 已存在。此处仅生成可部署文件，不代表已安装至 ChatGPT Skill 菜单或用户本机 Codex。

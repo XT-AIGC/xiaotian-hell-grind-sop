@@ -1,0 +1,321 @@
+{
+  "core": "higgsfield-seedance-prompt-builder.md",
+  "auxiliary_skills": [
+    "higgsfield-prompt-engine",
+    "higgsfield-acting-skill",
+    "higgsfield-fight-scene",
+    "anamorphic-look"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1909,
+      "sha256": "79be9d1625b18d373fb63141a9ac592949a8f9b708e80e5c6df3c594523eb95d"
+    },
+    {
+      "path": "higgsfield-seedance-prompt-builder.md",
+      "bytes": 38637,
+      "sha256": "e6e46c0961a3f46a87f64eb04183dc7041e8c637c98ae6b2326ccf36342eebf8"
+    },
+    {
+      "path": "skills/anamorphic-look/SKILL.md",
+      "bytes": 6137,
+      "sha256": "ae747d6972c6974ffaaf582da94093932e947c92873e41d137a8edfbc8c9407b"
+    },
+    {
+      "path": "skills/higgsfield-acting-skill/SKILL.md",
+      "bytes": 11727,
+      "sha256": "f1a61a1f9572380f79b38b17a4580690370c9e146db1bf3d325e64a57549baa8"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/SKILL.md",
+      "bytes": 11926,
+      "sha256": "411c0598aef0a6407d7a93bcff13ba35889b1233da988343a014d85a5a175a68"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/choreography-patterns.md",
+      "bytes": 6120,
+      "sha256": "691a49619c6f73263b18dbe3f79f7ed802cd8616574ee8ee26c846e47dd3c084"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/jkd-core.md",
+      "bytes": 6004,
+      "sha256": "5dcd8385ed6209764038c2fd397619bed12d95fd116b8c001112ad33f839385b"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/moves-catalog.md",
+      "bytes": 17500,
+      "sha256": "26e9448db75fa4a60802dc3383868c86dd68a7163a7089b44c1a2a3c83bc0075"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/01-tao-of-jkd.md",
+      "bytes": 18132,
+      "sha256": "91152a60402e90ee401d4bda9210ee60998cd81af5f33535eb32b69d376772c8"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/02-filosofia-i-duh-boytsa.md",
+      "bytes": 9944,
+      "sha256": "a40be59d3fcaf04dffad288c6bf17b9b4405fbb97b3c34506373e92363d7476b"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/03-fm1-priemy-samooborony.md",
+      "bytes": 14085,
+      "sha256": "b9f88e764870742f2288f3182280f406654d05d6d6fa666cfd5918f87cc1235c"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/04-fm2-osnovnoy-kurs.md",
+      "bytes": 12979,
+      "sha256": "6b63e22113e0e20a5365e6eb0ab655f7962172968d65feb860e69e1e04fc3484"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/05-fm3-sovershenstvovanie.md",
+      "bytes": 11035,
+      "sha256": "6bea43837b3a4f93e2650b34457acb602d14d2fdfba24d3276fcd02904bfbdc4"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/06-fm4-osvoenie-priemov.md",
+      "bytes": 11186,
+      "sha256": "8af31b4f746c25a131f0507232f8e5487ae0a2e0f91c87ff23f6b93281f58a70"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/07-metodika-borby.md",
+      "bytes": 10510,
+      "sha256": "a223d3c88c843b8cf61611bd0c2fe6f331246671aa06f8f3698219081fb31d75"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/08-dao-kung-fu.md",
+      "bytes": 9822,
+      "sha256": "11356c9800f5d83f5786dccd0887e03011e909367ab4566548b671d2bb6f2b54"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/09-video-tutorials.md",
+      "bytes": 17799,
+      "sha256": "d74b963a70bf2c334d505126df00d96cfcb6ee1641f696e0cbf480387e6535bf"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/13-wc1-perviy-uroven.md",
+      "bytes": 12111,
+      "sha256": "7bb34569356a28c7452009d82db936915ba02c43f2f033947741790055812f3b"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/14-wc2-vtoroy-uroven.md",
+      "bytes": 15571,
+      "sha256": "0c65f877a52e230b49e71cddb18a5c4f3d6881196cf61fc562ec4949e4ba24fb"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/15-wc-dummy-116.md",
+      "bytes": 8364,
+      "sha256": "3ac3a63ff9521fa6568fbf45d49206c51d4387b1605e57986f5d7eff0539807f"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/16-wc-vysshiy-uroven.md",
+      "bytes": 11559,
+      "sha256": "4cf627e66c5ff1ccd8b724d013642009bc914dd6e8ae1c878fdf9f26dc44ae63"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/17-wc-video-tutorials.md",
+      "bytes": 14203,
+      "sha256": "d43c39542adc861459c6587248c0314051d3180b3f25d37ac3d7d530a3a0cd9d"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/INDEX.md",
+      "bytes": 4978,
+      "sha256": "a703fd6d608bbc0ff277cdba3dc3b2104e6793dd0f491a6c69039d2fd0c11b36"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/5OZztKXK46M.md",
+      "bytes": 3212,
+      "sha256": "90ed8bff5edc53122a0ee86582d94dae208b5df889dfea61f9b214d2cf3fb0fa"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/7M3FWG31ybE.md",
+      "bytes": 4925,
+      "sha256": "d78932a800db25bd5d5afb7711b3a9486d6e53c0d9d6bef1e9cbe1520150a2cc"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/9xs25_whwcg.md",
+      "bytes": 5666,
+      "sha256": "8d9a8d5731dd288c81cbbc22868d0f5f66c9f8fae9c31e6e0cec735d05cd3c34"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/AWHjwZdCeDg.md",
+      "bytes": 4421,
+      "sha256": "38323bc6dc2469a1955b6f6d493d8b0f2a849ffdd6a8aa42afa02ec4de8759e1"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/ClfYe9Uly28.md",
+      "bytes": 3504,
+      "sha256": "4523ad3e479bdaa576b7a6ca6381d70997c4ee4e5597419c80b8b62a5cf123a6"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/EFW6GrwDVEU.md",
+      "bytes": 3346,
+      "sha256": "e6361a4a8b6364d36804524397b5150c7a6c899b1f5223ca93609faedebcf2b1"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/M8f5o-mg6ic.md",
+      "bytes": 3934,
+      "sha256": "f8b138417c3f0dbed873ef6ede790ad11590d4454716496673333bd705ec8ce2"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/OgGWAhpUIjk.md",
+      "bytes": 4200,
+      "sha256": "8d0444bc941a44f77c791e1d4036030f38f38dccad24c00b2733258a002d7c8e"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/Pa2YV2zcfNQ.md",
+      "bytes": 3328,
+      "sha256": "6cfe6345b830fc4563cff412cfff630c32156876073e8cccd02ebf515de408d0"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/RTuGiLKA1I8.md",
+      "bytes": 4786,
+      "sha256": "b7c31c38082b4a8139aba06f06feea1aaed524032278a5701dda7751bc4a8ef5"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/St8jiC_0NFY.md",
+      "bytes": 3714,
+      "sha256": "6aee0dcf557dc14fdbe994880dc1b64e8ea500a744110d916a24d5a82129c857"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/VxmkjF38FeI.md",
+      "bytes": 5548,
+      "sha256": "23846b8be244046391574e1fa6f6cc94fb2c915eacc6a67d75b53a559ed392de"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/XpOTci5P7wQ.md",
+      "bytes": 6306,
+      "sha256": "c01f3782ed48a1e804a3ca396e90d95bd05c40880e3cf98d7d58314c3c4b8fea"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/_naZzjLzVXk.md",
+      "bytes": 7096,
+      "sha256": "4af7ff0348eb1e987fa7f6f0dad3925673fe07f708164bd1b4becea95ee84c49"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/ad17nEj_TBg.md",
+      "bytes": 3665,
+      "sha256": "1d941e0c18a07d779e57ccc292471ec3b69bdc12a62381cc91fc3f688f7ca5b9"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/aqn6cy3jB0k.md",
+      "bytes": 4253,
+      "sha256": "fa826e9ed902d08a3e464da8da69dbefab460ed2fa55ff82a6a99d98ad246dd2"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/cQ-IOUnSOxw.md",
+      "bytes": 5724,
+      "sha256": "52d94ca599d3d6e5c4437ad12eff028fd62f941b1f3162dd42d827bb1366183c"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/fOFHFta8aFw.md",
+      "bytes": 4242,
+      "sha256": "3216d584cbe2846de4677a95ab1527f2500c6d2c830204becd64152c960300d2"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/g7OInuomm2s.md",
+      "bytes": 3297,
+      "sha256": "fa05a70123ad336fd7453dfaf04e31a6013667bbe026734c26e2aaa0f6801478"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/t08AT17B_ks.md",
+      "bytes": 3695,
+      "sha256": "5a0536537e09df49e0a5101a7444e4ba95ae7ecc7da89cc46bb575298afab918"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/wJjnmZjwTBM.md",
+      "bytes": 4448,
+      "sha256": "0f02009048f4180b043816e3e76626d0354f2c4af14f2705dc4529a220b635ef"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/wmFPVRe44q4.md",
+      "bytes": 5718,
+      "sha256": "31a8b08aca01e6b81ee4383de56f542870c596de1145bbdf8de0acabf060d8ef"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video/z1aTbc1Bngs.md",
+      "bytes": 4901,
+      "sha256": "c20f508406197bb65058dc9235f11eadedf3e040be6d8647c443e1d885459fd5"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/7ic3Y9Jh3VE.md",
+      "bytes": 4958,
+      "sha256": "23fd8da610868c4fd8f4e1a28017f34bb2323df4ef5c4525f4804feecd972966"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/AVPavzLbTVk.md",
+      "bytes": 3721,
+      "sha256": "8e364b2c639bd3867c7ceb40bdc77644a605c35307e7b2dc6726ac1dfd03148a"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/D5XHHW_ut0I.md",
+      "bytes": 5035,
+      "sha256": "9159fb1372a52428ca13db5dab19ea40f6ff30b97bba5bbcfc2997519161d725"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/Hi29C5sOJsQ.md",
+      "bytes": 4816,
+      "sha256": "55f3f09fa99517cf04173bb833a22cb372c891d84bfe5dae6c02ce2888ac4ac3"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/K1F-vXRFgyM.md",
+      "bytes": 4263,
+      "sha256": "046c7d5f40fd7260ee25589756a0f36835b79efbb2ea29c701aa56f78e52aca5"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/Szs3-z91iKQ.md",
+      "bytes": 3892,
+      "sha256": "c74c07b0938f0a4450b71e0a07379593fba0ad4ae9a2aeca224fff99561a98d4"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/mfj16bcXlNk.md",
+      "bytes": 4488,
+      "sha256": "e8dc6df90d9a8c09743b1e8f83ac4ae70aa1acee0bc094523a5e6cb8059212e5"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/n-crGQ3NWNs.md",
+      "bytes": 5231,
+      "sha256": "f3dacb528b06f7aaf8f63323f6de4742e50b529a9ee2baf23c8026510603a185"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/nW7sOO82fk8.md",
+      "bytes": 4477,
+      "sha256": "a6f76337474d7984f725c2847de8616eaff5046a275224cb664241447a4ce87a"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/qyIXOinBHfM.md",
+      "bytes": 3996,
+      "sha256": "9ed322a69b61378313a8eb9161e5c4e4149847cc7eb26239cf48412cb0c5f87b"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/xI1Uxxke7CY.md",
+      "bytes": 4378,
+      "sha256": "9ccc1eea33901735f189969b2c4e7b40791b4c8ffa787a1af4fb7bc4c6bfac30"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/sources/video-wc/xsXAK3DtbDc.md",
+      "bytes": 4787,
+      "sha256": "a0fa50affcdd0cb33e06352ef97941bd0232a5277f1ff50efb13886650d19fa3"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/styles/wing-chun.md",
+      "bytes": 7258,
+      "sha256": "e4b9924d72a20863592ea0b81fc35c5ac9be89e2d583cf03de6c05a4988e5e56"
+    },
+    {
+      "path": "skills/higgsfield-fight-scene/references/techniques.md",
+      "bytes": 5992,
+      "sha256": "9aeb2b3520220ce5a06ba4b3af88b21b211cf055f4dc4ffcc4b84448d050afa4"
+    },
+    {
+      "path": "skills/higgsfield-prompt-engine/SKILL.md",
+      "bytes": 14045,
+      "sha256": "da8bd98ef4c8208b46b827c45ef85317c34269c47dba6126320a28dd2551bf23"
+    },
+    {
+      "path": "安装说明.txt",
+      "bytes": 300,
+      "sha256": "d4c88bf668c86b66cfc0d9afab00b1c46259beae5bf757a085cfe9587395fc5b"
+    }
+  ]
+}
